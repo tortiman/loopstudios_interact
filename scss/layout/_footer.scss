@@ -1,0 +1,112 @@
+// scss/layout/_footer.scss
+.footer {
+    background-color: $color-black;
+    color: $color-white;
+    padding: 3.5rem 1.5rem;
+    
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__left {
+        width: 100%;
+    }
+
+    &__logo {
+        margin-bottom: 2rem;
+        display: inline-block;
+    }
+
+    &__nav-list {
+        list-style: none;
+        margin-bottom: 3rem;
+    }
+
+    &__nav-item {
+        margin-bottom: 1.5rem;
+    }
+
+    &__nav-link {
+        color: $color-white;
+        text-decoration: none;
+    }
+
+    &__socials {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+
+    &__copyright {
+        color: $color-dark-gray;
+    }
+
+    
+    // Estilos para Desktop
+    @media (min-width: $breakpoint-desktop) {
+        padding: 2.5rem 10%;
+        max-width: 1440px;
+        margin-inline: auto;
+        &__container {
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        &__left, &__right {
+            width: auto;
+            text-align: left;
+        }
+
+        &__right {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        &__nav-list {
+            display: flex;
+            gap: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 0;
+        }
+
+        &__nav-item {
+            margin-bottom: 0;
+        }
+        
+        &__socials {
+            margin-bottom: 0;
+            // Mueve el copyright debajo de los iconos sociales
+            order: -1; 
+            margin-bottom: 1.5rem;
+        }
+
+        &__nav-link{
+            color: $color-white;
+            text-decoration: none;
+            padding-bottom: 0.5rem;
+            position: relative;
+            // Efecto hover para la línea inferior
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 2px;
+                background-color: $color-white;
+                transition: width 0.3s;
+            }
+
+            &:hover::after {
+                width: 60%;
+            }
+        }
+    }
+}

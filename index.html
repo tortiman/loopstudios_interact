@@ -1,0 +1,239 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Loopstudios</title>
+    <link rel="stylesheet" href="/dist/main.css" />
+  </head>
+  <body>
+    <!-- ======================= Bloque Header ======================= -->
+    <header class="header">
+      <div class="header__container">
+        <a href="#" class="header__logo">
+          <img src="/images/logo.svg" alt="Loopstudios Logo" />
+        </a>
+
+        <!-- Navegación para escritorio -->
+        <nav class="header__nav header__nav--desktop">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">About</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Careers</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Events</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Products</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Support</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Botón de menú para móvil -->
+        <button class="header__hamburger" aria-label="Abrir menú">
+          <img src="/images/icon-hamburger.svg" alt="Menú" />
+        </button>
+      </div>
+
+      <div class="header__title-box">
+        <h1 class="header__title">Immersive experiences that deliver</h1>
+      </div>
+
+      <!-- Navegación para móvil (inicialmente oculta) -->
+      <nav class="header__nav header__nav--mobile" id="menuBurguer">
+        <div class="header__container-mobile">
+          <a href="#" class="header__logo">
+            <img src="/images/logo.svg" alt="Loopstudios Logo" />
+          </a>
+          <a href="#" class="header__close">
+            <img src="/images/icon-close.svg" alt="Close menu" />
+          </a>
+        </div>
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">ABOUT</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">CAREERS</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">EVENTS</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">PRODUCTS</a>
+          </li>
+          <li class="header__nav-item">
+            <a href="#" class="header__nav-link">SUPPORT</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ======================= Bloque Interactive ======================= -->
+      <section class="interactive">
+        <div class="interactive__image-wrapper">
+          <img
+            src="/images/mobile/image-interactive.jpg"
+            alt="Hombre usando gafas de realidad virtual"
+            class="interactive__image"
+          />
+        </div>
+        <div class="interactive__content">
+          <h2 class="interactive__title">The leader in interactive VR</h2>
+          <p class="interactive__text">
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+
+      <!-- ======================= Bloque Creations ======================= -->
+      <section class="creations">
+        <div class="creations__header">
+          <h2 class="creations__title">Our creations</h2>
+          <a href="#" class="creations__button creations__button--desktop"
+            >See all</a
+          >
+        </div>
+
+        <div class="creations__grid">
+          <div class="creations__item">
+            <img
+              src="/images/mobile/image-deep-earth.jpg"
+              alt="Deep Earth"
+              class="creations__item-image creations__item-image1"
+            />
+            <h3 class="creations__item-title">Deep <br />Earth</h3>
+          </div>
+          <div class="creations__item">
+            <img
+              src="/images/mobile/image-night-arcade.jpg"
+              alt="Night Arcade"
+              class="creations__item-image creations__item-image2"
+            />
+            <h3 class="creations__item-title">Night <br />Arcade</h3>
+          </div>
+          <div class="creations__item">
+            <img
+              src="/images/mobile/image-curiosity.jpg"
+              alt="Night Arcade"
+              class="creations__item-image creations__item-image3"
+            />
+            <h3 class="creations__item-title">THE <br />CURIOSITY</h3>
+          </div>
+          <div class="creations__item">
+            <img
+              src="/images/mobile/image-fisheye.jpg"
+              alt="Night Arcade"
+              class="creations__item-image creations__item-image4"
+            />
+            <h3 class="creations__item-title">MAKE IT <br />FISH EYE</h3>
+          </div>
+          <div class="creations__item">
+            <img
+              src="/images/mobile/image-from-above.jpg"
+              alt="Night Arcade"
+              class="creations__item-image creations__item-image5"
+            />
+            <h3 class="creations__item-title">FROM UP <br />ABOVE VR</h3>
+          </div>
+          <div class="creations__item">
+            <img
+              src="/images/mobile/image-grid.jpg"
+              alt="Night Arcade"
+              class="creations__item-image creations__item-image6"
+            />
+            <h3 class="creations__item-title">THE <br />GRID</h3>
+          </div>
+          <div class="creations__item">
+            <img
+              src="/images/mobile/image-pocket-borealis.jpg"
+              alt="Night Arcade"
+              class="creations__item-image creations__item-image7"
+            />
+            <h3 class="creations__item-title">POCKET <br />BOREALIS</h3>
+          </div>
+          <div class="creations__item">
+            <img
+              src="/images/mobile/image-soccer-team.jpg"
+              alt="Night Arcade"
+              class="creations__item-image creations__item-image8"
+            />
+            <h3 class="creations__item-title">SOCCER <br />TEAM VR</h3>
+          </div>
+        </div>
+
+        <a href="#" class="creations__button creations__button--mobile"
+          >SEE ALL</a
+        >
+      </section>
+    </main>
+
+    <!-- ======================= Bloque Footer ======================= -->
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__left">
+          <a href="#" class="footer__logo">
+            <img src="/images/logo.svg" alt="Loopstudios Logo" />
+          </a>
+          <nav class="footer__nav">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">About</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Careers</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Events</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Products</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Support</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer__right">
+          <div class="footer__socials">
+            <a href="#" class="footer__social-link" aria-label="Facebook"
+              ><img src="/images/icon-facebook.svg" alt=""
+            /></a>
+            <a href="#" class="footer__social-link" aria-label="Twitter"
+              ><img src="/images/icon-twitter.svg" alt=""
+            /></a>
+            <a href="#" class="footer__social-link" aria-label="Pinterest"
+              ><img src="/images/icon-pinterest.svg" alt=""
+            /></a>
+            <a href="#" class="footer__social-link" aria-label="Instagram"
+              ><img src="/images/icon-instagram.svg" alt=""
+            /></a>
+          </div>
+          <p class="footer__copyright">
+            &copy; 2023 Loopstudios. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Se necesitaría un script para el menú móvil -->
+    <script src="js/script.js"></script>
+  </body>
+</html>

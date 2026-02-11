@@ -1,0 +1,27 @@
+$color-white: hsl(0, 0%, 100%);
+$color-black: hsl(0, 0%, 0%);
+$color-dark-gray: hsl(0, 0%, 55%);
+$color-very-dark-gray: hsl(0, 0%, 41%);
+
+$font-primary: 'Josefin Sans', sans-serif;
+$font-secondary: 'Alata', sans-serif;
+
+$breakpoint-desktop: 992px; // Punto de quiebre para el diseño de escritorio
+
+// scss/base/_reset.scss y _typography.scss
+// ... (Aquí irían tus resets y estilos base para h1, p, etc.)
+body {
+    font-family: $font-primary;
+    font-size: 15px;
+    margin: 0;
+        
+}
+
+ul{
+        margin: 0;
+        padding: 0;
+    }
+
+p{
+    margin-top: 1rem;
+}

@@ -1,0 +1,60 @@
+// scss/layout/_interactive.scss
+.interactive {
+    padding: 6rem 1.5rem;
+    text-align: center;
+
+    &__image-wrapper {
+        margin-bottom: 3rem;
+    }
+
+    &__image {
+        width: 100%;
+        max-width: 730px; 
+    }
+
+    &__title {
+        font-family: $font-primary;
+        font-size: 2.5rem;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+        font-weight: 300;
+    }
+    
+    &__content{
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    &__text {
+        color: $color-dark-gray;
+        line-height: 1.6;
+    }
+
+    // Estilos para Desktop
+    @media (min-width: $breakpoint-desktop) {
+        display: flex;
+        position: relative;
+        padding: 10rem;
+        text-align: left;
+        max-width: 1440px;
+        margin-inline: auto;
+        &__image-wrapper {
+            margin-bottom: 0;
+            width: 65%;
+        }
+
+        &__content {
+            position: absolute;
+            bottom: 10rem;
+            right: 20%;
+            background-color: $color-white;
+            padding: 6rem 6rem 0 6rem;
+            width: 70%;
+            max-width: 540px;
+        }
+
+        &__title {
+            font-size: 3rem;
+        }
+    }
+}
