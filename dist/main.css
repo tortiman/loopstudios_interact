@@ -1,0 +1,424 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 1rem;
+}
+
+.header {
+  background-image: url("../images/mobile/image-hero.jpg");
+  background-size: contain;
+  background-position: center;
+  color: hsl(0, 0%, 100%);
+  padding: 2rem 1.5rem;
+  height: 600px;
+  position: relative;
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.header__container-mobile {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo img {
+  width: 140px;
+}
+.header__nav--desktop {
+  display: none;
+}
+.header__hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header__nav--mobile{
+    display: none;
+    width: 100%;
+    height:600px;
+    background-color: hsl(0, 0%, 0%); 
+    position:absolute;
+    top:0px;
+
+  }
+
+.header__nav--mobile.open { display: block; }
+
+.header__container-mobile{
+  margin:60px 40px 0 40px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.header__nav-list {
+  list-style: none;
+  margin:60px 0 0;
+  font-size: 20px;
+  color:hsl(0, 0%, 100%);
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  font-weight: 300;
+}
+.header__nav-item {
+  margin-left: 2rem;
+}
+
+.header__nav-link {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.header__title-box {
+  border: 2px solid hsl(0, 0%, 100%);
+  padding: 1.5rem;
+  margin-top: 7rem;
+  max-width: 500px;
+}
+.header__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 1.1;
+}
+@media (min-width: 992px) {
+  .header {
+    background-image: url("../images/desktop/image-hero.jpg");
+    padding: 1em 10%;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+  .header__hamburger {
+    display: none;
+  }
+  .header__nav--desktop {
+    display: block;
+  }
+
+  .header__nav--mobile{
+    display: none;
+    position:absolute;
+    top:0;
+
+  }
+  .header__nav-list {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    margin-top:0;
+  }
+  .header__nav-item {
+    margin-left: 2rem;
+  }
+  .header__nav-link {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    position: relative;
+  }
+  .header__nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: hsl(0, 0%, 100%);
+    transition: width 0.3s;
+  }
+  .header__nav-link:hover::after {
+    width: 60%;
+  }
+  .header__title-box {
+    margin-top: 8em;
+    padding: 1.5rem;
+  }
+  .header__title {
+    font-size: 3.5rem;
+    margin: 0;
+  }
+}
+
+.interactive {
+  padding: 6rem 1.5rem;
+  text-align: center;
+}
+.interactive__image-wrapper {
+  margin-bottom: 3rem;
+}
+.interactive__image {
+  width: 100%;
+  max-width: 730px;
+}
+.interactive__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.interactive__content {
+  width: 80%;
+  margin-inline: auto;
+}
+.interactive__text {
+  color: hsl(0, 0%, 55%);
+  line-height: 1.6;
+}
+@media (min-width: 992px) {
+  .interactive {
+    display: flex;
+    position: relative;
+    padding: 10rem;
+    text-align: left;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+  .interactive__image-wrapper {
+    margin-bottom: 0;
+    width: 65%;
+  }
+  .interactive__content {
+    position: absolute;
+    bottom: 10rem;
+    right: 20%;
+    background-color: hsl(0, 0%, 100%);
+    padding: 6rem 6rem 0 6rem;
+    width: 70%;
+    max-width: 540px;
+  }
+  .interactive__title {
+    font-size: 3rem;
+  }
+}
+
+.creations {
+  padding: 0 1.5rem 6rem;
+}
+.creations__header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.creations__title {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+.creations__button--desktop {
+  display: none;
+}
+.creations__grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.creations__item {
+  position: relative;
+  cursor: pointer;
+}
+.creations__item::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+  z-index: 1;
+}
+.creations__item-image {
+  width: 100%;
+  display: block;
+}
+
+.creations__item:hover{
+  opacity: 0.5;
+} 
+.creations__item-title {
+  position: absolute;
+  bottom: 0.05rem;
+  left: 1.5rem;
+  color: hsl(0, 0%, 100%);
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  z-index: 2;
+  width: 70%;
+}
+.creations__button--mobile {
+  display: block;
+  margin: 2rem auto 0;
+  width: 7rem;
+  text-align: center;
+  border: 2px solid hsl(0, 0%, 0%);
+  padding: 0.8rem 2.5rem;
+  text-decoration: none;
+  color: hsl(0, 0%, 0%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+@media (min-width: 992px) {
+  .creations {
+    padding: 0 10% 10rem;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+  .creations__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  .creations__button--desktop {
+    display: block;
+    width: 7rem;
+    text-align: center;
+    border: 2px solid hsl(0, 0%, 0%);
+    padding: 0.8rem 2.5rem;
+    text-decoration: none;
+    color: hsl(0, 0%, 0%);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .creations__grid {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  .creations__button--mobile {
+    display: none;
+  }
+  .creations__item-image1 {
+    content: url("../images/desktop/image-deep-earth.jpg");
+  }
+  .creations__item-image2 {
+    content: url("../images/desktop/image-night-arcade.jpg");
+  }
+  .creations__item-image3 {
+    content: url("../images/desktop/image-curiosity.jpg");
+  }
+  .creations__item-image4 {
+    content: url("../images/desktop/image-fisheye.jpg");
+  }
+  .creations__item-image5 {
+    content: url("../images/desktop/image-from-above.jpg");
+  }
+  .creations__item-image6 {
+    content: url("../images/desktop/image-grid.jpg");
+  }
+  .creations__item-image7 {
+    content: url("../images/desktop/image-pocket-borealis.jpg");
+  }
+  .creations__item-image8 {
+    content: url("../images/desktop/image-soccer-team.jpg");
+  }
+}
+
+.footer {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
+  padding: 3.5rem 1.5rem;
+}
+.footer__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.footer__left {
+  width: 100%;
+}
+.footer__logo {
+  margin-bottom: 2rem;
+  display: inline-block;
+}
+.footer__nav-list {
+  list-style: none;
+  margin-bottom: 3rem;
+}
+.footer__nav-item {
+  margin-bottom: 1.5rem;
+}
+.footer__nav-link {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+.footer__socials {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  justify-content: center;
+}
+.footer__copyright {
+  color: hsl(0, 0%, 55%);
+}
+@media (min-width: 992px) {
+  .footer {
+    padding: 2.5rem 10%;
+    max-width: 1440px;
+    margin-inline: auto;
+  }
+  .footer__container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .footer__left, .footer__right {
+    width: auto;
+    text-align: left;
+  }
+  .footer__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .footer__nav-list {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
+  }
+  .footer__nav-item {
+    margin-bottom: 0;
+  }
+  .footer__socials {
+    margin-bottom: 0;
+    order: -1;
+    margin-bottom: 1.5rem;
+  }
+  .footer__nav-link {
+    color: hsl(0, 0%, 100%);
+    text-decoration: none;
+    padding-bottom: 0.5rem;
+    position: relative;
+  }
+  .footer__nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: hsl(0, 0%, 100%);
+    transition: width 0.3s;
+  }
+  .footer__nav-link:hover::after {
+    width: 60%;
+  }
+}/*# sourceMappingURL=main.css.map */
