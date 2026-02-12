@@ -12,4 +12,5 @@ document.addEventListener('DOMContentLoaded',()=>{
         nav.style.display = 'none';
     
     });
+    
 });
